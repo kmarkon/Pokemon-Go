@@ -1,0 +1,34 @@
+.container{
+  width: 500px;
+  margin: 0 auto;
+  table{
+    border-collapse: collapse;
+    width: 100%;
+    height: 100%;
+      th{
+        height: 60px;
+      }
+      td:first-child{
+        width: 50px;
+      }
+      th,td{
+        border: 1px solid #ddd;
+        .image_1{
+          width: 100px;
+          height: 100px;
+          background: url("../images/pok.png") 0 0;
+        }
+        .image_2{
+          width: 100px;
+          height: 100px;
+          background: url("../images/pok.png") 550px 0;
+        }
+        .image_3{
+          width: 100px;
+          height: 100px;
+          background: url("../images/pok.png") 450px 0;
+        }
+      }
+
+  }/*ending table*/
+}/*ending .container*/
