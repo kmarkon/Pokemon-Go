@@ -1,34 +1,38 @@
-.container{
-  width: 500px;
-  margin: 0 auto;
+
   table{
     border-collapse: collapse;
     width: 100%;
-    height: 100%;
+    background-color:white;
+    border-radius: 10px;
+    text-align: center;
       th{
         height: 60px;
+        padding: 0;
+        color:turquoise;
       }
-      td:first-child{
-        width: 50px;
+      th:first-child, td:first-child{
+        width: 100px;
       }
-      th,td{
-        border: 1px solid #ddd;
-        .image_1{
-          width: 100px;
-          height: 100px;
-          background: url("../images/pok.png") 0 0;
-        }
-        .image_2{
-          width: 100px;
-          height: 100px;
-          background: url("../images/pok.png") 550px 0;
-        }
-        .image_3{
-          width: 100px;
-          height: 100px;
-          background: url("../images/pok.png") 450px 0;
-        }
+      tr:hover{
+        background-color: #e9e9e9;
       }
 
-  }/*ending table*/
-}/*ending .container*/
+      td{
+        border-top: 1px solid #e9e9e9;
+        padding: 0;
+
+        div{
+          text-align: center;
+        }
+        div:hover{
+        -webkit-animation:rotate 4s;
+        -moz-animation:rotate 4s;
+        animation:rotate 4s;
+        }
+
+      }//ending td,th
+  }//ending table
+
+@-moz-keyframes rotate { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes rotate { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes rotate { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }

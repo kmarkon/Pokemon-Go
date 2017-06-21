@@ -1,0 +1,13 @@
+.pages{
+  text-align: center;
+  padding-top: 20px;
+  .pagination {
+    display: inline-block;
+  }
+  a{
+    border: 1px solid #ddd;
+    padding: 5px;
+    color:white;
+    text-decoration: none;
+  }
+}//ending .pages
