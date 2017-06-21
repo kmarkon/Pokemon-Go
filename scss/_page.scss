@@ -1,6 +1,6 @@
 .container_page{
   width: 900px;
-  height: 600px;
+  height: 100vh;
   // border: 1px solid red;
   margin: 0 auto;
   display: flex;
@@ -19,7 +19,7 @@
       justify-content: space-around;
       align-items: center;
       .box{
-        width: 30%;
+        width: 33%;
         height: 100%;
         border:1px solid turquoise;
         display: flex;
@@ -27,7 +27,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
-      
+        margin-right: 10px;
         .data{
           width: 90%;
           height: 60%;
@@ -44,9 +44,15 @@
               height: 50px;
               text-align: left;
               }
-            }
+            }//ending table
         }//ending .data
       }//ending .box
+      .box:last-child{
+        margin-right: 0;
+      }
+      .box:hover{
+        border:3px solid turquoise;
+      }
     }//ending .boxes
   }//ending section
 }//ending .container_page

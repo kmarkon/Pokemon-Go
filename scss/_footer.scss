@@ -3,11 +3,19 @@
   padding-top: 20px;
   .pagination {
     display: inline-block;
-  }
-  a{
-    border: 1px solid #ddd;
-    padding: 5px;
-    color:white;
-    text-decoration: none;
+    a{
+      border: 1px solid #ddd;
+      padding: 5px;
+      color:white;
+      text-decoration: none;
+    }
+    a.active{
+      background-color: white;
+      color: black;
+    }
+    a:hover:not(.active) {
+      background-color: white;
+      color: black;
+    }
   }
 }//ending .pages
