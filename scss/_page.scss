@@ -1,4 +1,4 @@
-.container_page{
+.container_page {
   width: 900px;
   height: 100vh;
   // border: 1px solid red;
@@ -6,29 +6,33 @@
   display: flex;
   display: -webkit-flex;
   flex-direction: column;
-  section{
+
+  section {
     width: 100%;
     height: 80%;
     // border:1px solid blue;
-    .boxes{
+    .boxes {
       width: 100%;
       height: 100%;
       display: flex;
       display: -webkit-flex;
       flex-direction: row;
-      justify-content: space-around;
+      flex-wrap: wrap;
+      justify-content: space-between;
       align-items: center;
-      .box{
+
+      .box {
         width: 33%;
         height: 100%;
-        border:1px solid turquoise;
+        border: 1px solid turquoise;
         display: flex;
         display: -webkit-flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
-        margin-right: 10px;
-        .data{
+        // margin-right: 10px;
+        margin-bottom: 20px;
+        .data {
           width: 90%;
           height: 60%;
           background-color: white;
@@ -37,22 +41,38 @@
           display: -webkit-flex;
           flex-direction: column;
           align-items: center;
-          table{
+
+          h3 {
+            text-align: center;
+            width: 50%;
+            height: 10%;
+            border-bottom: 2px solid turquoise;
+          }
+
+          table {
             width: 95%;
-            tr{
+
+            tr {
               width: 100%;
               height: 50px;
               text-align: left;
-              }
-            }//ending table
-        }//ending .data
-      }//ending .box
-      .box:last-child{
+            }
+          }
+          //ending table
+        }
+        //ending .data
+      }
+      //ending .box
+      .box:last-child {
         margin-right: 0;
       }
-      .box:hover{
-        border:3px solid turquoise;
+
+      .box:hover {
+        border: 3px solid turquoise;
       }
-    }//ending .boxes
-  }//ending section
-}//ending .container_page
+    }
+    //ending .boxes
+  }
+  //ending section
+}
+//ending .container_page
